@@ -11,6 +11,7 @@ namespace LINQProblems
         static void Main(string[] args)
         {
 
+
             //Problem1
             //List<string> words = new List<string>() { "the", "bike", "this", "it", "tenth", "mathematics" };
 
@@ -40,18 +41,10 @@ namespace LINQProblems
 
             //};
 
-            //Problem4
+            ////Problem4
 
-            string str = "terrill";
-            List<string> charCounts = str.GroupBy(ch => ch).OrderBy(item => item.Key).Select(
-                                   item => item.Key + "=" + item.Count().ToString()).ToList();
-            
-            foreach (string s in charCounts)
-            {
-                Console.WriteLine(s);
-                
-            }
-            Console.ReadKey();
+            Problem4 problem = new Problem4();
+            problem.GetCountAndAlphabetize();
         }
     }
 }
