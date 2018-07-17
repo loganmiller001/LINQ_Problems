@@ -22,9 +22,9 @@ namespace LINQProblems
             //Problem2
             List<string> names = new List<string>() { "Mike", "Dan", "Scott", "Nick", "Mike" };
 
-            // var justOneName = names.Select(n => n).Distinct().ToList();
-            List<string> names2 = names.Distinct().ToList();
-            foreach (var name in names2)
+            var justOneName = names.Select(n => n).Distinct().ToList();
+            //List<string> names2 = names.Distinct().ToList();
+            foreach (var name in justOneName)
             {
                 Console.WriteLine("{0}", name);
             }
